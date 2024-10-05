@@ -47,7 +47,7 @@ export type OnSetup = (value: {
 	 */
 	lenis: Lenis;
 	/**
-	 * The content div element
+	 * The wrapper div element
 	 *
 	 * Will only be defined if `root` is `false`
 	 */

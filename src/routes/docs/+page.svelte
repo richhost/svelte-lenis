@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CodeBlock from '$docs/components/code-block.svelte';
 	import GetStarted from '$docs/components/get-started.svelte';
+	import { usageCode } from './code.js';
 </script>
 
 <GetStarted />
@@ -14,25 +15,15 @@ Install Svelte Lenis using your package manager of choice.
 <CodeBlock
 	lang="bash"
 	code={`
-pnpm add lenis svelte-lenis
-npm install lenis svelte-lenis
+pnpm add svelte-lenis
+bun add svelte-lenis
+npm install svelte-lenis
 `}
 />
 
 <h2>Usage</h2>
 
-<CodeBlock
-	lang="svelte"
-	code={`
-<script>
-  import { SvelteLenis } from 'svelte-lenis'
-</script>
-
-<SvelteLenis root>
-  <!-- content -->
-</SvelteLenis>
-`}
-/>
+<CodeBlock lang="svelte" code={usageCode} />
 
 <h2>Props</h2>
 <ul>
@@ -53,7 +44,7 @@ npm install lenis svelte-lenis
 	<li>
 		<code>autoRaf</code>
 		{': '}
-		if <code>false</code>, <code>lenis.raf</code> needs to be called manually. Default:
+		If <code>false</code>, <code>lenis.raf</code> needs to be called manually. Default:
 		<code>true</code>.
 	</li>
 	<li>
@@ -69,6 +60,37 @@ npm install lenis svelte-lenis
 		<code>class</code>
 		{': '}
 		class name for the wrapper div. Default: <code>undefined</code>.
+	</li>
+	<li>
+		<code>onSetup</code>
+		{': '}
+		When Lenis setup is done, this callback will be called. Read {' '}
+		<a href="/docs/#onsetup">OnSetup</a>{' '}for more details.
+	</li>
+</ul>
+
+<h4 id="onsetup">OnSetup</h4>
+<CodeBlock
+	lang="typescript"
+	code={`
+type OnSetup = (value: {
+	lenis: Lenis;
+	wrapper?: HTMLDivElement;
+	content?: HTMLDivElement;
+}) => void;
+`}
+/>
+<ul>
+	<li>
+		<code>lenis</code>{': '}The Lenis instance
+	</li>
+	<li>
+		<code>wrapper</code>{': '}The wrapper div element, will only be defined if <code>root</code> is
+		<code>false</code>.
+	</li>
+	<li>
+		<code>content</code>{': '}The content div element, will only be defined if <code>root</code> is
+		<code>false</code>.
 	</li>
 </ul>
 
