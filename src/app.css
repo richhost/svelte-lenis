@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+html,
+body {
+	@apply bg-neutral-900 text-neutral-100;
+}
+
+code {
+	font-family: 'JetBrains Mono', monospace;
+	font-optical-sizing: auto;
+}
