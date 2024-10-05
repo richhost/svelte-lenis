@@ -9,3 +9,5 @@ export const load: Load = async () => {
 
 	return { highlighter };
 };
+
+export const prerender = true;
