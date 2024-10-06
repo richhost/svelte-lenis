@@ -59,3 +59,6 @@ export type OnSetup = (value: {
 	 */
 	content?: HTMLDivElement;
 }) => void;
+
+export type * from 'lenis';
+export type { Lenis };

@@ -2,7 +2,7 @@
 	import IconArrowRight from 'lucide-svelte/icons/arrow-right';
 </script>
 
-<div class="flex flex-col items-center px-6">
+<div class="flex flex-col items-center px-6 relative">
 	<div class="inline-flex min-h-dvh flex-col items-center justify-center">
 		<img class="w-28 aspect-square" src="/favicon.svg" alt="" />
 		<h1 class="text-6xl lg:text-7xl font-semibold">Svelte Lenis</h1>

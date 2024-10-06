@@ -4,6 +4,8 @@
 html,
 body {
 	@apply bg-neutral-900 text-neutral-100;
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
 }
 
 code {
