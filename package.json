@@ -1,6 +1,6 @@
 {
 	"name": "svelte-lenis",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Abiee",
 	"scripts": {
 		"dev": "vite dev",
