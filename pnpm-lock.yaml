@@ -26,6 +26,9 @@ importers:
       '@tailwindcss/vite':
         specifier: 4.0.0-alpha.26
         version: 4.0.0-alpha.26(vite@5.4.8(lightningcss@1.27.0))
+      gsap:
+        specifier: ^3.12.5
+        version: 3.12.5
       lenis:
         specifier: ^1.1.13
         version: 1.1.13
@@ -578,6 +581,9 @@ packages:
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
+  gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
 
   hast-util-to-html@9.0.3:
     resolution: {integrity: sha512-M17uBDzMJ9RPCqLMO92gNNUDuBSq10a25SDBI08iCCxmorf4Yy6sYHK57n9WAbRAAaU+DuR4W6GN9K4DFZesYg==}
@@ -1375,6 +1381,8 @@ snapshots:
   globrex@0.1.2: {}
 
   graceful-fs@4.2.11: {}
+
+  gsap@3.12.5: {}
 
   hast-util-to-html@9.0.3:
     dependencies:

@@ -35,6 +35,7 @@
 		"@sveltejs/vite-plugin-svelte": "4.0.0-next.7",
 		"@tailwindcss/typography": "^0.5.15",
 		"@tailwindcss/vite": "4.0.0-alpha.26",
+		"gsap": "^3.12.5",
 		"lenis": "^1.1.13",
 		"lucide-svelte": "^0.447.0",
 		"prettier": "^3.3.3",
