@@ -36,14 +36,14 @@
 				}
 			});
 			tl.to(logo, {
-				scale: 2,
+				scale: 3,
 				duration: 1
 			});
 		}
 	});
 </script>
 
-<SvelteLenis root autoRaf={false} {onSetup}>
+<SvelteLenis root={false} autoRaf={false} {onSetup}>
 	<div class="flex flex-col items-center px-6 relative">
 		<div class="inline-flex min-h-dvh flex-col items-center justify-center">
 			<img bind:this={logo} class="w-28 aspect-square" src="/favicon.svg" alt="" />
@@ -69,7 +69,7 @@
 	</div>
 
 	<div class="fixed bottom-6 w-full pointer-events-none flex items-center justify-center">
-		<Mouse />
+		<Mouse class="animate-bounce" />
 	</div>
 
 	<div class="h-screen"></div>
