@@ -11,17 +11,6 @@
 		lenis = instance;
 	};
 
-	$effect(() => {
-		function update(time: number) {
-			lenis?.raf(time * 1000);
-		}
-		gsap.ticker.add(update);
-
-		return () => {
-			gsap.ticker.remove(update);
-		};
-	});
-
 	let logo = $state<HTMLImageElement>();
 
 	$effect(() => {
@@ -43,7 +32,7 @@
 	});
 </script>
 
-<SvelteLenis root={false} autoRaf={false} {onSetup}>
+<SvelteLenis root={true} {onSetup}>
 	<div class="flex flex-col items-center px-6 relative">
 		<div class="inline-flex min-h-dvh flex-col items-center justify-center">
 			<img bind:this={logo} class="w-28 aspect-square" src="/favicon.svg" alt="" />
